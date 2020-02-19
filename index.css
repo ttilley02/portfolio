@@ -1,91 +1,327 @@
 * {
     box-sizing: border-box;
-    font-family: "PT-Serif";
+    font-family: 'Gentium Basic', serif;
   }
 
 
 
-#navBar{
 
-text-align: right;
-padding-top: 1%;
-padding-bottom: 3%;
-padding-right: 1%;
-
-
+.header{
+color: #BEB9B5;
+font-family: 'Open Sans', sans-serif;
+font-size: 26px;
+text-align: center;
 }
 
 
+#navBar{
+text-align: right;
+padding-right: 1%;
+background-color: rgb(228, 214, 196);
+position: fixed;   rgb(0, 0, 0);
+top: 0; 
+width: 100%
+}
 
-#section1 {
-    
+.personal {
+padding-top: 1%;
+text-align: left;
+padding-left: 2%;
+font-family: 'Open Sans', sans-serif;
+font-size: 30px;
+color: rgb(0, 0, 0);
+font-weight: 700;
+
+  
+}
+
+
+#navBar a {
+  height: 20px;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  display: inline-block;
+  font-weight: 700;
+
+ 
+}
+
+/*title*/
+.titleHeader{
+font-family: 'Open Sans', sans-serif;
+padding: 10px;
+color:white;
+font-weight: 650;
+}
+
+/*profile pick*/
+.profile{ 
+  border: solid white 5px;
+  border-radius: 100%;
+  width: 220px; 
+  height: 220px; 
+
+}
+
+/*background*/
+#section1 { 
     text-align: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    height: 500px;
+    padding-top: 150px;
     background-image: url('images/cityBackground.jpg');
     background-position: center center;
     background-size: cover;
-    height:50em;
+    height:580px;
     background-repeat: no-repeat;    
     color: white;
+    font-size: 24px;
     
 
 }
+
+/*Aboout me Section*/
 #section2 {
-    height: 500px;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: rgba(56, 155, 221, 0.89);
-}
-
-.work{
+  border: solid  #17252a 2px;
+  padding-top: 150px;
+  height: auto;
+  background-color:  #17252a;
+  color: #BEB9B5;
+  font-size: 26px;
+  line-height: 38px;
+     
+ 
     
-    padding-left: 5%;
-    padding-right: 5%
+}
+
+*.details{
+   
+   padding: 5%;
+   text-align: center;
+   margin:0 auto;
+   width: 1100px;
+   max-width: 90%;
+ 
+
 
 }
+
+/*Entire portfolio section to include header*/
+.work{
+
+padding-top: 170px;
+padding-bottom: 100px;
+text-align: center;
+background-color:  #17252a;
+color: #BEB9B5;
+}
+
+#projectsPortfolio{
+  color: #BEB9B5;
+  padding-bottom: 100px;
+}
+
+/*flexbox within section 3 for project spacing*/
 #section3 {
-    height: 250px;
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     flex-direction:row;
     flex-wrap: wrap;
-    padding-left: 5%;
-    padding-right: 5%
-    
+   
+ 
+      
 } 
 
-
-
-#section4 {
-    padding-top: .5%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%
-    
+/*blocks to vertically align picture and text for each project.  Text edittable here*/
+#project{
+  display: block;
+  
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 250px;
+  padding-top: 80px;
+  
+  
+   
 }
 
 
+
+/*font and spacing for each project description*/
+.port{
+  
+  line-height: 30px;
+  font-size: 24px;
+  width: 250px;
+ 
+}
+
+/*backgroun images for each project*/
+
+.thumb1{
+background-image: url('images/quizAppThumb.jpg');
+opacity: 1;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+
+#project:hover {
+opacity: 0.3;
+}
+
+.thumb2{
+background-image: url('images/working.jpg');
+opacity: 1;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+
+}
+
+#project:hover {
+opacity: 0.3;
+}
+
+/*Contact me area*/
+#section4 {
+
+  text-align: center;
+  height: 400px;
+  padding-top: 80px;
+  padding-bottom: 10%;
+  background-color:   #17252a;
+}
+.iconSet{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ 
+
+
+}
+
+.iconFade {
+opacity: 1;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+
+}
+
+.icon1:hover {
+opacity: 0.3;
+}
+
+
+.icon1{
+background-image: url('images/gitlogo.png');
+width: 100px;
+height: 100px;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat; 
+
+ 
+}
+
+
+
+.icon2:hover {
+opacity: 0.3;
+}
+.icon2{
+background-image: url('images/linked.png');
+width: 100px;
+height: 100px;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;  
+}
+
+.icon3:hover {
+opacity: 0.3;
+}
+.icon3{
+background-image: url('images/email.png');
+width: 100px;
+height: 100px;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;  
+}
+
 @media screen and (min-width:961px) {
-     body {
-        min-height: 100%;
-        min-width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        text-align: center;
-    }
-    #mainSection,#iconsMisc{
-        display: flex;
-        flex-direction: column;
-        width: calc(100% - 500px);
-                
-    }
-            
-    #navBar{
-    padding-left: 1%;
-    padding-right: 1%;
-        }
-    }
+/*
+#navBar {
+  height: 100%; 
+  width: 180px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color:#45a29e;
+  overflow-x: hidden; 
+  padding-top: 80px;
+  display: block;
+}
+
+#navBar a {
+  text-align: center;
+  padding-top: 80px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #BEB9B5;
+  display: block;
+  
+}
+
+main {
+  margin-left: 180px;  Same as the width of the sidenav
+  font-size: 22px;
+   
+
+  
+}*/
+
+/*flexbox within section 3 for project spacing*/
+#section3 {
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction:row;
+    flex-wrap: wrap;
+   
+ 
+      
+} 
+
+/*blocks to vertically align picture and text for each project.  Text edittable here*/
+#project{
+  display: block;
+  
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+  padding-top: 50px;
+  
+  
+   
+}
+
+
+
+/*font and spacing for each project description*/
+.port{
+  
+  line-height: 30px;
+  font-size: 24px;
+  width: 400px;
+ 
+}
+}
