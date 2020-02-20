@@ -3,11 +3,8 @@
     font-family: 'Gentium Basic', serif;
   }
 
-
-
-
 .header{
-color: #BEB9B5;
+color: #051a3b;
 font-family: 'Open Sans', sans-serif;
 font-size: 26px;
 text-align: center;
@@ -17,19 +14,20 @@ text-align: center;
 #navBar{
 text-align: right;
 padding-right: 1%;
-background-color: rgb(228, 214, 196);
-position: fixed;   rgb(0, 0, 0);
+padding-bottom: 1%;
+height: 70px;
+background-color: rgb(200, 146, 9);
+position: fixed; 
 top: 0; 
 width: 100%
 }
 
 .personal {
-padding-top: 1%;
+padding-left: 1%;
 text-align: left;
-padding-left: 2%;
 font-family: 'Open Sans', sans-serif;
-font-size: 30px;
-color: rgb(0, 0, 0);
+font-size: 20px;
+color: #051a3b;
 font-weight: 700;
 
   
@@ -38,10 +36,10 @@ font-weight: 700;
 
 #navBar a {
   height: 20px;
-  padding: 6px 8px 6px 16px;
+  padding: 1px 6px 6px 16px;
   text-decoration: none;
   font-size: 14px;
-  color: black;
+  color: #051a3b;
   display: inline-block;
   font-weight: 700;
 
@@ -82,24 +80,24 @@ font-weight: 650;
 
 /*Aboout me Section*/
 #section2 {
-  border: solid  #17252a 2px;
+  border: solid  white;
   padding-top: 150px;
   height: auto;
-  background-color:  #17252a;
-  color: #BEB9B5;
-  font-size: 26px;
-  line-height: 46px;
+  background-color:  white;
+  color: rgb(12, 57, 129);
+  font-size: 25px;
+  line-height: 42px;
      
  
     
 }
 
-*.details{
+.details{
    
    padding: 5%;
    text-align: center;
    margin:0 auto;
-   width: 1100px;
+   width: 1150px;
    max-width: 90%;
  
 
@@ -107,19 +105,20 @@ font-weight: 650;
 }
 
 /*Entire portfolio section to include header*/
+#projectsPortfolio{
+  color:  #051a3b;
+  padding-bottom: 100px;
+}
+
 .work{
 
 padding-top: 170px;
 padding-bottom: 100px;
 text-align: center;
-background-color:  #17252a;
-color: #BEB9B5;
+background-color:  white;
+color:  rgb(12, 57, 129);
 }
 
-#projectsPortfolio{
-  color: #BEB9B5;
-  padding-bottom: 100px;
-}
 
 /*flexbox within section 3 for project spacing*/
 #section3 {
@@ -163,25 +162,27 @@ color: #BEB9B5;
 .thumb1{
 background-image: url('images/quizAppThumb.jpg');
 opacity: 1;
-transition: opacity .25s ease-in-out;
--moz-transition: opacity .25s ease-in-out;
--webkit-transition: opacity .25s ease-in-out;
+transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-webkit-transition: opacity .5s ease-in-out;
+border-radius: 5%;
 }
 
-#project:hover {
+.project:hover {
 opacity: 0.3;
 }
 
 .thumb2{
 background-image: url('images/working.jpg');
 opacity: 1;
-transition: opacity .25s ease-in-out;
--moz-transition: opacity .25s ease-in-out;
--webkit-transition: opacity .25s ease-in-out;
+transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-webkit-transition: opacity .5s ease-in-out;
+border-radius: 5%;
 
 }
 
-#project:hover {
+.project:hover {
 opacity: 0.3;
 }
 
@@ -192,7 +193,7 @@ opacity: 0.3;
   height: 400px;
   padding-top: 80px;
   padding-bottom: 10%;
-  background-color:   #17252a;
+  background-color:  white;
 }
 .iconSet{
  display: flex;
@@ -203,13 +204,6 @@ opacity: 0.3;
 
 }
 
-.iconFade {
-opacity: 1;
-transition: opacity .25s ease-in-out;
--moz-transition: opacity .25s ease-in-out;
--webkit-transition: opacity .25s ease-in-out;
-
-}
 
 .icon1:hover {
 opacity: 0.3;
@@ -222,7 +216,10 @@ width: 100px;
 height: 100px;
 background-position: center center;
 background-size: cover;
-background-repeat: no-repeat; 
+background-repeat: no-repeat;
+transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-webkit-transition: opacity .5s ease-in-out; 
 
  
 }
@@ -238,7 +235,10 @@ width: 100px;
 height: 100px;
 background-position: center center;
 background-size: cover;
-background-repeat: no-repeat;  
+background-repeat: no-repeat;
+transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-webkit-transition: opacity .5s ease-in-out;  
 }
 
 .icon3:hover {
@@ -250,43 +250,14 @@ width: 100px;
 height: 100px;
 background-position: center center;
 background-size: cover;
-background-repeat: no-repeat;  
+background-repeat: no-repeat;
+transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-webkit-transition: opacity .5s ease-in-out;   
 }
 
 @media screen and (min-width:961px) {
-/*
-#navBar {
-  height: 100%; 
-  width: 180px; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
-  left: 0;
-  background-color:#45a29e;
-  overflow-x: hidden; 
-  padding-top: 80px;
-  display: block;
-}
 
-#navBar a {
-  text-align: center;
-  padding-top: 80px;
-  padding-left: 8px;
-  padding-right: 8px;
-  text-decoration: none;
-  font-size: 17px;
-  color: #BEB9B5;
-  display: block;
-  
-}
-
-main {
-  margin-left: 180px;  Same as the width of the sidenav
-  font-size: 22px;
-   
-
-  
-}*/
 
 /*flexbox within section 3 for project spacing*/
 #section3 {
@@ -300,7 +271,20 @@ main {
 } 
 
 /*blocks to vertically align picture and text for each project.  Text edittable here*/
-#project{
+.project{
+  display: block;
+  
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+  padding-top: 50px;
+  
+  
+   
+}
+.project{
   display: block;
   
   background-position: center center;
