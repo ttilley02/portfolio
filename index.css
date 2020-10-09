@@ -1,199 +1,125 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Gentium Basic', serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: 'Commissioner', sans-serif;
+;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+/*profile image & link*/
+
+
+.profile{
+  float: left;
+  width:34%;
+  margin-right: 9px;
+}
+.profImage:hover {
+opacity: 0.6;
+}
+.profImage{
+background-image: url('images/email.png');
+width: 50px;
+height: 50px;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-webkit-transition: opacity .5s ease-in-out;   
+}
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 10px;
+  max-height: 700px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
   }
-
-.header{
-color: #051a3b;
-font-family: 'Open Sans', sans-serif;
-font-size: 26px;
-text-align: center;
 }
 
-
-#navBar{
-text-align: right;
-padding-right: 1%;
-padding-bottom: 1%;
-height: 70px;
-background-color: rgb(200, 146, 9);
-position: fixed; 
-top: 0; 
-width: 100%
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
-.personal {
-padding-left: 1%;
-text-align: left;
-font-family: 'Open Sans', sans-serif;
-font-size: 20px;
-color: #051a3b;
-font-weight: 700;
+/*independent colors for the projects*/
 
+.first{
+  background-color: #8cd8a2f0;
+  box-shadow: 10px 10px 5px grey;
   
 }
 
-
-#navBar a {
-  height: 20px;
-  padding: 1px 6px 6px 16px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #051a3b;
-  display: inline-block;
-  font-weight: 700;
-
- 
-}
-
-/*title*/
-.titleHeader{
-font-family: 'Open Sans', sans-serif;
-padding: 10px;
-color:white;
-font-weight: 650;
-}
-
-/*profile pick*/
-.profile{ 
-  border: solid white 5px;
-  border-radius: 100%;
-  width: 220px; 
-  height: 220px; 
-
-}
-
-/*background*/
-#section1 { 
-    text-align: center;
-    padding-top: 150px;
-    background-image: url('images/cityBackground.jpg');
-    background-position: center center;
-    background-size: cover;
-    height:580px;
-    background-repeat: no-repeat;    
-    color: white;
-    font-size: 24px;
-    
-
-}
-
-/*Aboout me Section*/
-#section2 {
-  border: solid  white;
-  padding-top: 150px;
-  height: auto;
-  background-color:  white;
-  color: rgb(12, 57, 129);
-  font-size: 25px;
-  line-height: 42px;
-     
- 
-    
-}
-
-.details{
+.second{
+  background-color: #8cf0dc;
+   box-shadow: 10px 10px 5px grey;
    
-   padding: 5%;
-   text-align: center;
-   margin:0 auto;
-   width: 1150px;
-   max-width: 90%;
- 
 
 
 }
 
-/*Entire portfolio section to include header*/
-#projectsPortfolio{
-  color:  #051a3b;
-  padding-bottom: 100px;
+.third{
+ background-color: #8cd2f0;
+ box-shadow: 10px 10px 5px grey;
+ align-content: center;
 }
 
-.work{
+.fourth{
+  background-color: #8ca0f0;
+   box-shadow: 8px 8px 3px grey;
 
-padding-top: 170px;
-padding-bottom: 100px;
-text-align: center;
-background-color:  white;
-color:  rgb(12, 57, 129);
-}
-
-
-/*flexbox within section 3 for project spacing*/
-#section3 {
-    display: flex;
-    justify-content:space-evenly;
-    flex-direction:row;
-    flex-wrap: wrap;
-   
- 
-      
-} 
-
-/*blocks to vertically align picture and text for each project.  Text edittable here*/
-#project{
-  display: block;
-  
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 250px;
-  width: 250px;
-  padding-top: 80px;
-  
-  
-   
-}
-
-
-
-/*font and spacing for each project description*/
-.port{
-  
-    
-  font-size: 24px;
-  width: 250px;
- 
-}
-
-/*backgroun images for each project*/
-
-.thumb1{
-background-image: url('images/quizAppThumb.jpg');
-opacity: 1;
-transition: opacity .5s ease-in-out;
--moz-transition: opacity .5s ease-in-out;
--webkit-transition: opacity .5s ease-in-out;
-border-radius: 5%;
-}
-
-.project:hover {
-opacity: 0.3;
-}
-
-.thumb2{
-background-image: url('images/working.jpg');
-opacity: 1;
-transition: opacity .5s ease-in-out;
--moz-transition: opacity .5s ease-in-out;
--webkit-transition: opacity .5s ease-in-out;
-border-radius: 5%;
 
 }
 
-.project:hover {
-opacity: 0.3;
-}
-
-/*Contact me area*/
 #section4 {
 
   text-align: center;
-  height: 400px;
-  padding-top: 80px;
-  padding-bottom: 10%;
-  background-color:  white;
+  height: 10%;
+
 }
 .iconSet{
  display: flex;
@@ -212,8 +138,8 @@ opacity: 0.3;
 
 .icon1{
 background-image: url('images/gitlogo.png');
-width: 100px;
-height: 100px;
+width: 50px;
+height: 50px;
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -231,8 +157,8 @@ opacity: 0.3;
 }
 .icon2{
 background-image: url('images/linked.png');
-width: 100px;
-height: 100px;
+width: 50px;
+height: 50px;
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -246,8 +172,8 @@ opacity: 0.3;
 }
 .icon3{
 background-image: url('images/email.png');
-width: 100px;
-height: 100px;
+width: 50px;
+height: 50px;
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -256,56 +182,12 @@ transition: opacity .5s ease-in-out;
 -webkit-transition: opacity .5s ease-in-out;   
 }
 
-@media screen and (min-width:961px) {
-
-
-/*flexbox within section 3 for project spacing*/
-#section3 {
-    display: flex;
-    justify-content:space-evenly;
-    flex-direction:row;
-    flex-wrap: wrap;
-   
- 
-      
-} 
-
-/*blocks to vertically align picture and text for each project.  Text edittable here*/
-.project{
-  display: block;
-  
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 400px;
-  padding-top: 50px;
-  
-  
-   
-}
-.project{
-  display: block;
-  
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 400px;
-  padding-top: 50px;
-  
-  
-   
-}
 
 
 
-/*font and spacing for each project description*/
-.port{
-  
-  line-height: 40px;
-  font-size: 24px;
-  width: 400px;
- 
-}
-}
+
+
+
+
+
+
