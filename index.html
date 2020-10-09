@@ -1,66 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    
-
-    <title>Portfolio</title>
-</head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner&family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+  </head>
 <body>
-    <nav id='navBar' class='menu'>
-        <h1 class="personal">Timothy Tilley</h1>
-        <a href="https://github.com/ttilley02" class="header" target="_blank" >GitHub</a>
-        <a href="mailto:ttilley02@gmail.com" class="header" target="_blank" >Contact</a>
-    </nav>
-    <main id='mainSection'>
-        <section id='section1'>
-            <img class="profile" src='images/profile_.png' alt='MyProfilePic'>
-            <h2 class='titleHeader'>Web Developer</h2>
-        </section>
-        <section id='section2'>
-            <h2 class="header" >About me</h2>
-            <p class='details'>Currently, I am a finance manager and student at the Thinkful Bootcamp!  Coding fits me because I have a natural inclination to figure out how things work and how to make them better. I want to utilize that same drive in the development world and join a team with similar enthusiasm. I enjoy bouncing ideas off of others and learning about new technologies. In my spare time, I like to do circuit workouts at my local gym, DIY projects around the house and am a computer hardware enthusiast. I build computers and love researching to keep up with the latest tech.</p>
 
-        </section>
-          <section class='work'>
-          <h2 id= 'projectsPortfolio' class='header'>Projects/Portfolio</h2>
-          <section id='section3'>
-          
-          <div class='port'>
-            <a href="https://ttilley02.github.io/QuizApp" id='project1' class='thumb1 project' target="_blank" ></a>
-              <h3 class="header" > The Space and Beyond Quiz App</h3>
-              <p class='details1'>
-                This starts as an astronomy quiz but has the makings of a dynamic, make-your-own quiz. It's currently being structured to take inputs from users that want to make their own quizzes. It will ultimately collect info from every aspect of a quiz via user input.
-              </p>
+<!-- MAIN (Center website) -->
+<div class="main">
 
-                <footer>Technologies used: HTML, CSS, JQUERY</footer>
-                <a href="https://github.com/ttilley02/QuizApp" id='work' target="_blank">REPO</a>
-                <br>
-                <br>
-          </div>
-          
-          
-           <div class='port'>
-            <a href="https://github.com/ttilley02" id='project2' class='thumb2 project iconfade' target="_blank" ></a>
-              <h3 class="header" >Another great App in the works...</h3>
-              <p class='details1'>
-                Please stay tuned!</p>
 
-                <footer>Technologies used: Working on it!</footer>
-                <br>
-                <br>
-            </div>
-               
-        </section>
-        </section>
+<div class="top">
+  <div class="content">
+    <a href="https://github.com/ttilley02" class="profImage"  aria-label="profileImage" target="_blank"> <img class="profile" src="/images/me.jpg" alt="profileImage" ></a>
+    <h2> Timothy Tilley - Software Developer</h2>
+    <h2 class="header" > About Me</h2>
+      <p>Finance Manager and Aspiring Developer! Coding fits me because I have a natural inclination to figure out how things work and how to make them better. I want to utilize that same drive in the development world and join a team with similar enthusiasm. I enjoy bouncing ideas off of others and learning about new technologies. In my spare time, I like to hike, DIY projects around the house and am a computer hardware enthusiast. I build computers and love researching to keep up with the latest tech!</p>
+  </div>
+</div>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+     <div class="column">
+    <div class="content first">
+      
+      <img src="/images/vl.jpg" alt="VocabulabApp" style="width:100%">
+        <h3>Vocabulab</h3>
+          <p class='details1'>
+            Build up your Vocabulary with flash cards based on the University of Texas Austin beginner and intermediate spanish curriculum. Hover over a card to reveal the definition more options.
+          </p>
+          <footer>React.js, Node.js, Vanilla CSS5, Jwt-decode, bcrypt</footer>
+        <a href="https://vl-client2.vercel.app/" id='work' target="_blank">App</a>
+      <a href="https://github.com/ttilley02/VL_client2" id='work' target="_blank">Repo</a>
+      <br>
+      <br>
+    </div>
+  </div>
+     <div class="column">
+    <div class="content second">
+      <img src="/images/dev.jpg" alt="DevelopitApp" style="width:100%">
+        <h3>Developit</h3>
+          <p class='details2'>
+            A platform built for coders with a straight to the point approach for finding work.  Create a profile and become part of a network for freelance developers made by freelance developers! 
+          </p>
+          <footer>React.js, Node.js, Vanilla CSS5, Jwt-decode, bcrypt</footer>
+          <a href="https://capstone11.vercel.app/" id='work' target="_blank">App</a> 
+      <a href="https://github.com/ttilley02" id='work' target="_blank">Repo</a>
+      <br>
+      <br>
+    </div>
+  </div>
+      <div class="column">
+      <div class="content fourth">
+        <img src="/images/forecast.jpg" alt="ForecastApp" style="width:100%">
+          <h3> Weather & Activities API Hack</h3>
+            <p class='details4'>
+                This API HACK uses the NWS and fetches weather statistics(forecast) from the national weather service and provides users with activities suitable for the current conditions. 
+            </p>
+            <footer>HTML, CSS, JS , JQuery</footer>
+        <a href="https://github.com/ttilley02/forecast4activites" id='work' target="_blank">Repo</a>
+        <br>
+        <br>
+      </div>
+    </div>
+  <div class="column">
+    <div class="content third">
+      <img src="/images/quiz.jpg" alt="QuizApp" style="width:100%">
+        <h3> The Space and Beyond Quiz App</h3>
+          <p class='details3'>
+            This App starts as an astronomy quiz but has the makings of a dynamic, make-your-own quiz. It's currently being structured to take inputs from users that want to make their own quizzes.
+          </p>
+          <footer>HTML, CSS, JQUERY</footer>
+      <a href="https://github.com/ttilley02/QuizApp" id='work' target="_blank">Repo</a>
+      <br>
+      <br>
+    </div>
+  </div>
+
+
+<!-- END GRID -->
+</div>
         <section id='section4' class="header">
         
-            <h2 class='header'>Contact me</h2>
+            <h3 class='header'>Contact me</h3>
             <div class='iconSet'>
               <a href="https://github.com/ttilley02"  class='icon1' aria-label="GitHubIcon" target="_blank" ></a>
               <a href="https://www.linkedin.com/in/timothy-tilley-ii-47649b1a"  class='icon2' aria-label="LinkedInIcon" target="_blank" ></a>
@@ -70,8 +96,11 @@
             <br>
             
         </section>
-        <br>
- 
-    </main>
+
+
+
+<!-- END MAIN -->
+</div>
+
 </body>
 </html>
