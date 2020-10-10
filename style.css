@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner&family=Roboto+Condensed&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -5,8 +7,7 @@
 body {
   background-color: #f1f1f1;
   padding: 20px;
-  font-family: 'Commissioner', sans-serif;
-;
+  font-family: "Commissioner", sans-serif;
 }
 
 /* Center website */
@@ -21,25 +22,24 @@ h1 {
 }
 /*profile image & link*/
 
-
-.profile{
+.profile {
   float: left;
-  width:34%;
+  width: 34%;
   margin-right: 9px;
 }
 .profImage:hover {
-opacity: 0.6;
+  opacity: 0.6;
 }
-.profImage{
-background-image: url('images/email.png');
-width: 50px;
-height: 50px;
-background-position: center center;
-background-size: cover;
-background-repeat: no-repeat;
-transition: opacity .5s ease-in-out;
--moz-transition: opacity .5s ease-in-out;
--webkit-transition: opacity .5s ease-in-out;   
+.profImage {
+  background-image: url("images/email.png");
+  width: 50px;
+  height: 50px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
 }
 .row {
   margin: 8px -16px;
@@ -57,7 +57,7 @@ transition: opacity .5s ease-in-out;
   width: 25%;
 }
 
-/* Clear floats after rows */ 
+/* Clear floats after rows */
 .row:after {
   content: "";
   display: table;
@@ -67,7 +67,7 @@ transition: opacity .5s ease-in-out;
 /* Content */
 .content {
   background-color: white;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   padding: 10px;
   max-height: 700px;
 }
@@ -88,106 +88,79 @@ transition: opacity .5s ease-in-out;
 
 /*independent colors for the projects*/
 
-.first{
+.first {
   background-color: #8cd8a2f0;
   box-shadow: 10px 10px 5px grey;
-  
 }
 
-.second{
+.second {
   background-color: #8cf0dc;
-   box-shadow: 10px 10px 5px grey;
-   
-
-
+  box-shadow: 10px 10px 5px grey;
 }
 
-.third{
- background-color: #8cd2f0;
- box-shadow: 10px 10px 5px grey;
- align-content: center;
+.third {
+  background-color: #8cd2f0;
+  box-shadow: 10px 10px 5px grey;
+  align-content: center;
 }
 
-.fourth{
+.fourth {
   background-color: #8ca0f0;
-   box-shadow: 8px 8px 3px grey;
-
-
+  box-shadow: 8px 8px 3px grey;
 }
 
 #section4 {
-
   text-align: center;
   height: 10%;
-
 }
-.iconSet{
- display: flex;
- flex-direction: row;
- justify-content: space-around;
- 
-
-
+.iconSet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
 
 .icon1:hover {
-opacity: 0.3;
+  opacity: 0.3;
 }
 
-
-.icon1{
-background-image: url('images/gitlogo.png');
-width: 50px;
-height: 50px;
-background-position: center center;
-background-size: cover;
-background-repeat: no-repeat;
-transition: opacity .5s ease-in-out;
--moz-transition: opacity .5s ease-in-out;
--webkit-transition: opacity .5s ease-in-out; 
-
- 
+.icon1 {
+  background-image: url("images/gitlogo.png");
+  width: 50px;
+  height: 50px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
 }
-
-
 
 .icon2:hover {
-opacity: 0.3;
+  opacity: 0.3;
 }
-.icon2{
-background-image: url('images/linked.png');
-width: 50px;
-height: 50px;
-background-position: center center;
-background-size: cover;
-background-repeat: no-repeat;
-transition: opacity .5s ease-in-out;
--moz-transition: opacity .5s ease-in-out;
--webkit-transition: opacity .5s ease-in-out;  
+.icon2 {
+  background-image: url("images/linked.png");
+  width: 50px;
+  height: 50px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
 }
 
 .icon3:hover {
-opacity: 0.3;
+  opacity: 0.3;
 }
-.icon3{
-background-image: url('images/email.png');
-width: 50px;
-height: 50px;
-background-position: center center;
-background-size: cover;
-background-repeat: no-repeat;
-transition: opacity .5s ease-in-out;
--moz-transition: opacity .5s ease-in-out;
--webkit-transition: opacity .5s ease-in-out;   
+.icon3 {
+  background-image: url("images/email.png");
+  width: 50px;
+  height: 50px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
 }
-
-
-
-
-
-
-
-
-
-
