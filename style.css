@@ -158,21 +158,21 @@ main section#projects .project-tile:hover::before {
 }
 
 .part1 {
-	background-image: url("img/vl.jpg");
+	background-image: url("images/vl.jpg");
 	width: 328px;
 	height: 219.35px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .part2 {
-	background-image: url("img/forecast.jpg");
+	background-image: url("images/forecast.jpg");
 	width: 328px;
 	height: 219.35px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .part3 {
-	background-image: url("img/dev.jpg");
+	background-image: url("images/dev.jpg");
 	width: 328px;
 	height: 219.35px;
 	background-size: cover;
@@ -343,7 +343,7 @@ footer {
 }
 
 .icon1 {
-	background-image: url("img/gitlogo.png");
+	background-image: url("images/gitlogo.png");
 	margin: 15px;
 	width: 30px;
 	height: 30px;
@@ -359,7 +359,7 @@ footer {
 	opacity: 0.3;
 }
 .icon2 {
-	background-image: url("img/linked.png");
+	background-image: url("images/linked.png");
 	margin: 15px;
 	width: 30px;
 	height: 30px;
@@ -375,7 +375,7 @@ footer {
 	opacity: 0.3;
 }
 .icon3 {
-	background-image: url("img/email.png");
+	background-image: url("images/email.png");
 	margin: 15px;
 	width: 30px;
 	height: 30px;
