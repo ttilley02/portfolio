@@ -1,166 +1,389 @@
-@import url("https://fonts.googleapis.com/css2?family=Commissioner&family=Roboto+Condensed&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 * {
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: "Commissioner", sans-serif;
+html {
+	scroll-behavior: smooth;
+	font-family: "Poppins", sans-serif;
+	transition: all 0.3s ease-in-out;
+}
+html body {
+	min-width: 320px;
+}
+html img {
+	width: 100%;
+	height: auto;
+}
+html p {
+	text-align: center;
+}
+html h1,
+html h2,
+html h3 {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 800;
 }
 
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
+main nav#navbar {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: #e3e3e3;
+	z-index: 99;
+}
+main nav#navbar ul {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+}
+main nav#navbar ul li a {
+	color: black;
+	text-decoration: none;
+	opacity: 0.8;
+}
+main nav#navbar ul li a:hover {
+	color: #069ddd;
+	opacity: 1;
+}
+main section {
+	padding: 3rem 1rem;
+}
+main section .section-heading {
+	color: #57686f;
+	margin-bottom: 2rem;
 }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
+main section .section-heading2 {
+	color: #1e2326;
+	margin-bottom: 2rem;
+  font-size: 40px;
 }
-/*profile image & link*/
+main section .section-content {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+main section#welcome-section {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	height: 100vh;
+	min-height: 350px;
+	padding: 0;
+}
+main section#welcome-section .welcome-img {
+	background-image: url("https://i.imgur.com/BH4uzEN.jpg");
+	background-size: cover;
+	background-position: center;
+}
+main section#welcome-section .placeholder-background {
+	display: none;
+	background-color: #57686f;
+}
+main section#welcome-section .greeting {
+	color: white;
+	background-color: #57686f;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 1rem;
+}
+main section#welcome-section .greeting h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+main section#about p {
+	margin-bottom: 2rem;
+}
+main section#about .about-img {
+	text-align: center;
+}
+main section#about .about-img img {
+	max-width: 350px;
+}
+main section#skills {
+	min-height: 500px;
+	color: #dadada;
+	background-color: #14181a;
+}
+main section#skills .section-heading {
+	color: #dadada;
+}
+.mySkills {
+	list-style-type: none;
+}
+main section#skills .skill {
+	text-align: center;
+	margin-top: 3rem;
+}
+main section#skills .skill i {
+	font-size: 3rem;
+}
+main section#skills .skill h2 {
+	font-size: 1.1rem;
+	margin: 1rem;
+}
+main section#projects p {
+	margin-bottom: 2rem;
+}
+main section#projects .project-container {
+	display: grid;
+	grid-gap: 0.5rem;
+}
+main section#projects .project-tile {
+	cursor: pointer;
+	position: relative;
+	line-height: 0;
+}
+main section#projects .project-tile::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #069ddd;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+main section#projects .project-tile:hover::before {
+	opacity: 0.5;
+}
 
-.profile {
-  float: left;
-  width: 34%;
-  margin-right: 9px;
+.part1 {
+	background-image: url("img/vl.jpg");
+	width: 328px;
+	height: 219.35px;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
-.profImage:hover {
-  opacity: 0.6;
+.part2 {
+	background-image: url("img/forecast.jpg");
+	width: 328px;
+	height: 219.35px;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
-.profImage {
-  background-image: url("images/email.png");
-  width: 50px;
-  height: 50px;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
-}
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
+.part3 {
+	background-image: url("img/dev.jpg");
+	width: 328px;
+	height: 219.35px;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
+
+.repoLink {
+	text-align: center;
 }
 
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+main section#contact {
+	position: relative;
+	min-height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url("https://i.ibb.co/F0CNsTh/laptop.jpg");
+	background-size: cover;
+}
+main section#contact > * {
+	z-index: 2;
+}
+main section#contact::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #586670;
+	opacity: 0.8;
+}
+main section#contact .section-heading {
+	color: white;
+}
+main section#contact #profile-link {
+	padding: 1.5rem 2rem;
+	background-color: #46651e;
+	font-weight: 800;
+	font-size: 1.2rem;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+}
+main section#contact #profile-link:hover {
+	background-color: #6e6e6e;
 }
 
-/* Content */
-.content {
-  background-color: white;
-  font-family: "Roboto Condensed", sans-serif;
-  padding: 10px;
-  max-height: 700px;
+footer {
+	padding: 0.5rem;
+	text-align: center;
+	color: white;
+	background-color: black;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
+@media screen and (min-width: 568px) {
+	main nav#navbar ul {
+		width: 60%;
+		max-width: 600px;
+		margin-left: auto;
+	}
+	main nav#navbar ul li {
+		font-size: 1.1rem;
+	}
+	main section#welcome-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+	}
+	main section#welcome-section .placeholder-background {
+		display: block;
+		grid-row: 1 / span 1;
+		grid-column: 2 / span 1;
+	}
+	main section#welcome-section .greeting {
+		max-width: 500px;
+		height: 60%;
+		margin-left: -5rem;
+		grid-row: 1 / span 1;
+		grid-column: 2 / span 1;
+		align-self: center;
+	}
+	main section#welcome-section .greeting > * {
+		text-align: left;
+	}
+	main section#about .section-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 1rem;
+		align-items: center;
+	}
+	main section#about .section-content .about-img {
+		justify-self: center;
+	}
+	main section#about .section-content p {
+		max-width: 400px;
+		text-align: left;
+		margin-left: auto;
+	}
+	main section#projects .project-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	main section#projects .project-container p {
+		grid-column: 1 / -1;
+	}
+}
+@media screen and (min-width: 720px) {
+	p {
+		font-size: 1.1rem;
+	}
+
+	main .section-heading {
+		font-size: 2rem;
+	}
+	main section#welcome-section .greeting {
+		margin-left: -10rem;
+		max-width: 600px;
+	}
+	main section#welcome-section .greeting h1 {
+		font-size: 3rem;
+		line-height: 1;
+	}
+	main section#skills .skill-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	main section#skills .skill-container h2 {
+		font-size: 1.4rem;
+	}
+	main section#skills .skill-container i {
+		font-size: 4rem;
+	}
+}
+@media screen and (min-width: 1024px) {
+	main .section-heading {
+		font-size: 2.5rem;
+	}
+	main section#welcome-section .greeting {
+		padding-left: 2rem;
+		max-width: 700px;
+	}
+	main section#welcome-section .greeting h1 {
+		font-size: 3.5rem;
+	}
+	main section#welcome-section .greeting p {
+		font-size: 1.2rem;
+	}
+	main section#about .section-content {
+		grid-column-gap: 0;
+	}
+	main section#projects .project-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-/*independent colors for the projects*/
-
-.first {
-  background-color: #8cd8a2f0;
-  box-shadow: 10px 10px 5px grey;
-}
-
-.second {
-  background-color: #8cf0dc;
-  box-shadow: 10px 10px 5px grey;
-}
-
-.third {
-  background-color: #8cd2f0;
-  box-shadow: 10px 10px 5px grey;
-  align-content: center;
-}
-
-.fourth {
-  background-color: #8ca0f0;
-  box-shadow: 8px 8px 3px grey;
-}
-
-#section4 {
-  text-align: center;
-  height: 10%;
-}
 .iconSet {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .icon1:hover {
-  opacity: 0.3;
+	opacity: 0.3;
 }
 
 .icon1 {
-  background-image: url("images/gitlogo.png");
-  width: 50px;
-  height: 50px;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
+	background-image: url("img/gitlogo.png");
+	margin: 15px;
+	width: 30px;
+	height: 30px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
 }
 
 .icon2:hover {
-  opacity: 0.3;
+	opacity: 0.3;
 }
 .icon2 {
-  background-image: url("images/linked.png");
-  width: 50px;
-  height: 50px;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
+	background-image: url("img/linked.png");
+	margin: 15px;
+	width: 30px;
+	height: 30px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
 }
 
 .icon3:hover {
-  opacity: 0.3;
+	opacity: 0.3;
 }
 .icon3 {
-  background-image: url("images/email.png");
-  width: 50px;
-  height: 50px;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
+	background-image: url("img/email.png");
+	margin: 15px;
+	width: 30px;
+	height: 30px;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
 }
+
