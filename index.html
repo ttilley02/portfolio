@@ -1,170 +1,168 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <!-- MAIN (Center website) -->
-    <div class="main">
-      <div class="top">
-        <div class="content">
-          <a
-            href="https://github.com/ttilley02"
-            class="profImage"
-            aria-label="profileImage"
-            target="_blank"
-          >
-            <img class="profile" src="images/me.jpg" alt="profileImage"
-          /></a>
-          <h2>Timothy Tilley - Software Developer</h2>
-          <h2 class="header">About Me</h2>
-          <p>
-            Finance Manager and Aspiring Developer! Coding fits me because I
-            have a natural inclination to figure out how things work and how to
-            make them better. I want to utilize that same drive in the
-            development world and join a team with similar enthusiasm. I enjoy
-            bouncing ideas off of others and learning about new technologies. In
-            my spare time, I like to hike, DIY projects around the house and am
-            a computer hardware enthusiast. I build computers and love
-            researching to keep up with the latest tech!
-          </p>
-        </div>
-      </div>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>My Portfolio</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<main>
+			<nav id="navbar">
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<section id="welcome-section">
+				<div class="welcome-img"></div>
+				<div class="placeholder-background"></div>
+				<div class="greeting">
+					<h1>Software Developer</h1>
+					<p>
+						Timothy Tilley
+					</p>
+				</div>
+			</section>
+			<section id="about">
+				<h1 class="section-heading">About Me</h1>
+				<div class="section-content">
+					<p>
+						Finance Manager and Aspiring Developer! Coding fits me because I
+						have a natural inclination to figure out how things work and how to
+						make them better. I want to utilize that same drive in the
+						development world and join a team with similar enthusiasm.
+						<br />
+						<br />
+						I enjoy bouncing ideas off of others and learning about new
+						technologies. In my spare time, I like to hike, DIY projects around
+						the house and am a computer hardware enthusiast. I build computers
+						and love researching to keep up with the latest tech!
+					</p>
+					<div class="about-img">
+						<img src="/img/me.jpg" alt="profilePic" />
+					</div>
+				</div>
+			</section>
+			<section id="skills">
+				<h1 class="section-heading">My Skillset</h1>
+				<div class="section-content skill-container">
+					<div class="skill">
+						<i class="fab fa-internet-explorer"></i>
+						<h2>FULL STACK DEVELOPMENT</h2>
 
-      <!-- Portfolio Gallery Grid -->
-      <div class="row">
-        <div class="column">
-          <div class="content first">
-            <img src='images/vl.jpg' alt="VocabulabApp" style="width: 100%;" />
-            <h3>Vocabulab</h3>
-            <p class="details1">
-              Build up your Vocabulary with flashcards based on the University
-              of Texas Austin beginner and intermediate Spanish curriculum.
-              Hover over a card to reveal the definition and save them to your
-              profile. A great tool for learning more complicated Spanish.
-            </p>
-            <footer>React.js, Node.js, Vanilla CSS5, Jwt-decode, bcrypt</footer>
-            <a href="https://vl-client2.vercel.app/" id="work" target="_blank"
-              >App</a
-            >
-            <a
-              href="https://github.com/ttilley02/VL_client2"
-              id="work"
-              target="_blank"
-              >Fron End Repo</a
-            >
-             <a
-              href="https://github.com/ttilley02/vocabulabworkingserver"
-              id="work"
-              target="_blank"
-              >Backend Repo</a>
-            <br />
-            <br />
-          </div>
-        </div>
-        <div class="column">
-          <div class="content second">
-            <img
-              src='images/dev.jpg'
-              alt="DevelopitApp"
-              style="width: 100%;"
-            />
-            <h3>Developit</h3>
-            <p class="details2">
-              A platform built for coders with a 'straight to the point'
-              approach for finding work. Create a profile and become part of a
-              network for freelance developers made by freelance developers!
-              Sign up to look for work or find someone to do it for you!
-            </p>
-            <footer>React.js, Node.js, Vanilla CSS5, Jwt-decode, bcrypt</footer>
-            <a href="https://capstone11.vercel.app/" id="work" target="_blank"
-              >App</a
-            >
-            <a href="https://github.com/ttilley02" id="work" target="_blank"
-              >Repo</a
-            >
-            <br />
-            <br />
-          </div>
-        </div>
-        <div class="column">
-          <div class="content fourth">
-            <img
-              src="images/forecast.jpg"
-              alt="ForecastApp"
-              style="width: 100%;"
-            />
-            <h3>Weather & Activities API Hack</h3>
-            <p class="details4">
-              This API HACK uses the NWS and fetches weather
-              statistics(forecast) from the national weather service and
-              provides users with activities suitable for the current
-              conditions.
-            </p>
-            <footer>HTML, CSS, JS , JQuery</footer>
-            <a
-              href="https://github.com/ttilley02/forecast4activites"
-              id="work"
-              target="_blank"
-              >Repo</a
-            >
-            <br />
-            <br />
-          </div>
-        </div>
-        <div class="column">
-          <div class="content third">
-            <img src="images/quiz.jpg" alt="QuizApp" style="width: 100%;" />
-            <h3>The Space and Beyond Quiz App</h3>
-            <p class="details3">
-              This App starts as an astronomy quiz but has the makings of a
-              dynamic, make-your-own quiz. It's currently being structured to
-              take inputs from users that want to make their own quizzes.
-            </p>
-            <footer>HTML, CSS, JQUERY</footer>
-            <a
-              href="https://github.com/ttilley02/QuizApp"
-              id="work"
-              target="_blank"
-              >Repo</a
-            >
-            <br />
-            <br />
-          </div>
-        </div>
+						Exerienced with:
+						<ul class="mySkills">
+							<li>React.js</li>
+							<li>Node.js</li>
+							<li>PostgresSQL</li>
+							<li>JQuery</li>
+						</ul>
+					</div>
+					<div class="skill">
+						<i class="fab fa-react"></i>
+						<h2>Agile experience</h2>
+						<p>
+							Versed in leading projects from start to finish facilitating team
+							structures and responsibilities in a checkpoint/goal oriented
+							fashion
+						</p>
+					</div>
+					<div class="skill">
+						<i class="fas fa-laptop-code"></i>
+						<h2>WEB DEVELOPMENT</h2>
+						<p>
+							Comprehensive understanding of the big picture from front-end to
+							back-end. Experienced in unit and integration testing, responsive
+							design and integrating 3rd party platforms(firebase)
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="projects">
+				<h1 class="section-heading">My Projects</h1>
+				<div class="section-content project-container">
+					<a
+						class="project-tile part1"
+						href="https://vl-client2.vercel.app/"
+						target="_blank"
+					>
+					</a>
 
-        <!-- END GRID -->
-      </div>
-      <section id="section4" class="header">
-        <h3 class="header">Contact me</h3>
-        <div class="iconSet">
-          <a
-            href="https://github.com/ttilley02"
-            class="icon1"
-            aria-label="GitHubIcon"
-            target="_blank"
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/timothy-tilley-ii-47649b1a"
-            class="icon2"
-            aria-label="LinkedInIcon"
-            target="_blank"
-          ></a>
-          <a
-            href="mailto:ttilley02@gmail.com"
-            class="icon3"
-            aria-label="EmailIcon"
-            target="_blank"
-          ></a>
-        </div>
+					<a
+						class="project-tile part2"
+						href="https://ttilley02.github.io/forecast4activites/"
+						target="_blank"
+					>
+					</a>
 
-        <br />
-      </section>
+					<a
+						class="project-tile part3"
+						href="https://capstone11.vercel.app/"
+						target="_blank"
+					>
+					</a>
+				</div>
+				<div class="section-content project-container links">
+					<div class="repoLink">
+						<a href="https://github.com/ttilley02/VL_client2" target="_blank"
+							>Fron End Repo</a
+						>
 
-      <!-- END MAIN -->
-    </div>
-  </body>
+						<a
+							href="https://github.com/ttilley02/vocabulabworkingserver"
+							target="_blank"
+							>Backend Repo</a
+						>
+					</div>
+
+					<div class="repoLink">
+						<a href="https://github.com/ttilley02" id="work" target="_blank"
+							>Repo</a
+						>
+					</div>
+
+					<div class="repoLink">
+						<a
+							href="https://github.com/ttilley02/forecast4activites"
+							target="_blank"
+							>Repo</a
+						>
+					</div>
+				</div>
+			</section>
+			<section id="contact">
+				<h1 class="section-heading">Need help with your project?</h1>
+				<a
+					href="https://github.com/ttilley02"
+					id="profile-link"
+					target="_blank"
+				>
+					Get in touch with me!
+				</a>
+				<div class="iconSet">
+					<a
+						href="https://github.com/ttilley02"
+						class="icon1"
+						aria-label="GitHubIcon"
+						target="_blank"
+					></a>
+					<a
+						href="https://www.linkedin.com/in/timothy-tilley-ii-47649b1a"
+						class="icon2"
+						aria-label="LinkedInIcon"
+						target="_blank"
+					></a>
+					<a
+						href="mailto:ttilley02@gmail.com"
+						class="icon3"
+						aria-label="EmailIcon"
+						target="_blank"
+					></a>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>
