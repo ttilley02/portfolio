@@ -185,6 +185,7 @@ main section#projects .project-tile:hover::before {
 	background-repeat: no-repeat;
 	border-radius: 7px;
 	border-color: transparent #f5f5f5;
+	background-position: center;
 	
 }
 
