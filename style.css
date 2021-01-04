@@ -73,22 +73,22 @@ main section .section-content {
 main section#welcome-section {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
-	height: 100vh;
+	height: 45vh;
 	min-height: 350px;
 	padding: 0;
 }
 main section#welcome-section .welcome-img {
-	background-image: url("https://i.imgur.com/BH4uzEN.jpg");
+	background-image: url("images/working.jpg");
 	background-size: cover;
 	background-position: center;
 }
 main section#welcome-section .placeholder-background {
 	display: none;
-	background-color: #57686f;
+	background-color: #053144;
 }
 main section#welcome-section .greeting {
 	color: white;
-	background-color: #57686f;
+	background-color: #053144;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -111,7 +111,7 @@ main section#about .about-img img {
 main section#skills {
 	min-height: 500px;
 	color: #dadada;
-	background-color: #14181a;
+	background-color: #2195cf;
 }
 main section#skills .section-heading {
 	color: #dadada;
@@ -158,25 +158,34 @@ main section#projects .project-tile:hover::before {
 }
 
 .part1 {
-	background-image: url("images/vl.jpg");
-	width: 328px;
+	background-image: url("images/2222.PNG");
+	width: 300px;
 	height: 219.35px;
 	background-size: cover;
 	background-repeat: no-repeat;
+	border-radius: 7px;
+	border-color: transparent #f5f5f5;
+	
 }
 .part2 {
 	background-image: url("images/forecast.jpg");
-	width: 328px;
+	width: 300px;
 	height: 219.35px;
 	background-size: cover;
 	background-repeat: no-repeat;
+	border-radius: 7px;
+	border-color: transparent #f5f5f5;
+	
 }
 .part3 {
-	background-image: url("images/dev.jpg");
-	width: 328px;
+	background-image: url("images/1111.PNG");
+	width: 300px;
 	height: 219.35px;
 	background-size: cover;
 	background-repeat: no-repeat;
+	border-radius: 7px;
+	border-color: transparent #f5f5f5;
+	
 }
 
 
@@ -212,7 +221,7 @@ main section#contact .section-heading {
 }
 main section#contact #profile-link {
 	padding: 1.5rem 2rem;
-	background-color: #46651e;
+	background-color: #471564;
 	font-weight: 800;
 	font-size: 1.2rem;
 	color: white;
@@ -340,6 +349,7 @@ footer {
 
 .icon1:hover {
 	opacity: 0.3;
+	border-radius: 7px;
 }
 
 .icon1 {
@@ -353,10 +363,12 @@ footer {
 	transition: opacity 0.5s ease-in-out;
 	-moz-transition: opacity 0.5s ease-in-out;
 	-webkit-transition: opacity 0.5s ease-in-out;
+
 }
 
 .icon2:hover {
 	opacity: 0.3;
+	border-radius: 7px;
 }
 .icon2 {
 	background-image: url("images/linked.png");
@@ -369,10 +381,12 @@ footer {
 	transition: opacity 0.5s ease-in-out;
 	-moz-transition: opacity 0.5s ease-in-out;
 	-webkit-transition: opacity 0.5s ease-in-out;
+
 }
 
 .icon3:hover {
 	opacity: 0.3;
+	border-radius: 7px;
 }
 .icon3 {
 	background-image: url("images/email.png");
@@ -385,5 +399,6 @@ footer {
 	transition: opacity 0.5s ease-in-out;
 	-moz-transition: opacity 0.5s ease-in-out;
 	-webkit-transition: opacity 0.5s ease-in-out;
+
 }
 
