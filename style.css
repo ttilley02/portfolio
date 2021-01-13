@@ -188,6 +188,17 @@ main section#projects .project-tile:hover::before {
 	background-position: center;
 	
 }
+.part4 {
+	background-image: url("images/mobileUI.png");
+	width: 300px;
+	height: 219.35px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 7px;
+	border-color: transparent #f5f5f5;
+	background-position: center;
+	
+}
 
 
 .repoLink {
